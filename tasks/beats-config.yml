@@ -33,7 +33,7 @@
 #Copy the default file
 - name: Copy Default File for Instance
   template: src=beat.j2 dest={{instance_default_file}} mode=0644 force=yes owner=root group=root
-  notify: restart {{beat}}
+  notify: restart the service
 
 #Copy templated config file
 - name: Copy Configuration File for {{beat}}
